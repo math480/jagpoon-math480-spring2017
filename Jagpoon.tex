@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Mean Value Theorem}
+\author{John Paul Agpoon }
+\date{May 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Mean Value Theorem}
+A brief history of the Mean Value Theorem is that, a special case of this theorem was first described by Parameshvara. A restridcted form of the theorem was proved by Rolle in 1691. This later became as Rolle's Theorem and was proved only for polynomials, without the techniques in Calculus. The Mean Value Theorem that we look at now is its modern form that was stated and proved bu Cauchy in 1823. Now let's look at Rolle's Theorem. It states that if a real-valued function $f$ is continuous on a proper closed interval ${[a,b]}$, differtiable on the open interval ${(a,b)}$, and ${f(a)=f(b)}$, then there exist at least one $c$ in the open interval $(a,b)$ such that $f'(c)=0$. In a similar manner, we look at Cauchy's Mean Value Theorem. Cauchy's Mean Value Theorem states, if functions $f$ and $g$ are both continuous on the closed interval $[a,b]$ and differentiable on the open interval $(a,b)$, then there exist some $c \in (a,b)$, such that ${\displaystyle (f(b)-f(a))g'(c)=(g(b)-g(a))f'(c).}$ Of course, if $g(a) \neq g(b)$ and if $g′(c) \neq 0$, this is equivalent to: ${\displaystyle {\frac {f'(c)}{g'(c)}}={\frac {f(b)-f(a)}{g(b)-g(a)}}.}$ Now for the actual theorem itself, it is no different from the other two theorems mentioned. It states that if $f(x)$ is defined and continuous on the interval $[a,b]$ and differentiable on $(a,b)$, then there is at least one number $c$ in the interval $(a,b)$ (that is $a<c<b$) such that $f'(c) = \frac{f(b)-f(a)}{b-a}$. With this we can prove the theorem. Given $f'(c) = \frac{f(b)-f(a)}{b-a}$ gives the slope of the line joining the points $(a, f(a)$) and $(b, f(b))$, which is a chord of the graph of $f$, while $f'(x)$ gives the slope of the tangent to the curve at the point $(x, f'(x))$ . Thus the Mean value theorem says that given any chord of a smooth curve, we can find a point lying between the end-points of the chord such that the tangent at that point is parallel to the chord. So we define  $g(x) = f(x)-rx$, where r is a constant. Since $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$ the sam e is true for $g$. So we choose $r$ so that $g$ satisfies teh conditions of Rolle's Theorem.
+\\
+\\
+$ g(a) = g(b) \Leftrightarrow f(a)-ra = f(b)-rb$
+\\
+$\Leftrightarrow r(b-a) = f(b)-f(a)$
+\\
+$\Leftrightarrow r = \frac{f(b)-f(a)}{b-a}$
+\\
+By Rolle's theorem, since $g$ is differentiable and $g(a) = g(b)$, there is some $c$ in  $(a,b)$ for which $g'(c)=0$ and it follows the equatlity $g(x)=f(x)-rx$ that \\
+${\displaystyle f'(c)=g'(c)+r=0+r={\frac {f(b)-f(a)}{b-a}}}$
+
+
+
+
+\end{document}
